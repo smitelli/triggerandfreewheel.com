@@ -1,6 +1,8 @@
 ErrorDocument 403 http://www.triggerandfreewheel.com/error/403
 ErrorDocument 500 http://www.triggerandfreewheel.com/error/500
 
+RedirectMatch 404 /\.git
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
