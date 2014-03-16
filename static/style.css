@@ -1,0 +1,238 @@
+body {
+background: #111 url('background.png') repeat;
+font-family: 'Trebuchet MS', Verdana, 'Courier New', sans-serif;
+font-size: 14px;
+margin: 0;
+text-align: center;
+}
+
+a {
+color: #822;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+img {
+border: 0;
+}
+
+form, ul {
+margin-bottom: 0;
+margin-top: 0;
+}
+
+#page {
+margin: 0 auto;
+padding-bottom: 50px;
+text-align: left;
+width: 975px;
+}
+
+#nav {
+background: url('topbar.png') no-repeat left top;
+font-size: 24px;
+font-weight: bold;
+height: 50px;
+text-align: center;
+}
+
+#nav .inner {
+padding: 10px;
+overflow: hidden;
+white-space: nowrap;
+}
+
+#nav a {
+color: #999;
+margin: 0 55px;
+}
+
+#nav .selected {
+color: #fff;
+}
+
+#nav a:hover {
+color: #fff;
+text-decoration: none;
+}
+
+#logo {
+background: url('logo.png') no-repeat 50% 50%;
+height: 120px;
+text-align: center;
+}
+
+#logo a {
+display: block;
+margin: 0 auto;
+height: 85px;
+width: 925px;
+}
+
+#content {
+background: #ddd url('bucket-middle.png') repeat-y left top;
+padding: 0 20px;
+overflow: hidden;
+}
+
+#contenttop {
+background: url('bucket-top.png') no-repeat left top;
+font-size: 4px;
+height: 20px;
+}
+
+#contentbottom {
+background: url('bucket-bottom.png') no-repeat left bottom;
+font-size: 4px;
+height: 20px;
+}
+
+#footer {
+color: #999;
+font-size: 10px;
+margin-top: 20px;
+text-align: center;
+}
+
+.post {
+background: #bbb url('post-middle.png') repeat-y left top;
+padding: 0 15px 10px;
+margin: 0;
+}
+
+.posttop {
+background: url('post-top.png') no-repeat left top;
+font-size: 4px;
+height: 14px;
+}
+
+.postbottom {
+background: url('post-bottom.png') no-repeat left bottom;
+font-size: 4px;
+height: 14px;
+}
+
+.posttitle {
+background: url('post-title.png') no-repeat left top;
+color: #fff;
+font-size: 24px;
+font-weight: bold;
+height: 50px;
+line-height: 45px;
+margin-bottom: 20px;
+overflow: hidden;
+padding-left: 14px;
+white-space: nowrap;
+}
+
+.posttitle a, .posttitle a:hover {
+color: #fff;
+text-decoration: none;
+}
+
+.postbody {
+padding: 20px 10px 10px 10px;
+}
+
+.comicnav {
+padding-top: 2px;
+text-align: center;
+}
+
+.comicimg {
+max-width: 915px;
+text-align: center;
+}
+
+.comicimg img {
+border: 1px solid #000;
+max-width: 900px;
+}
+
+.share {
+text-align: center;
+margin-top: 20px;
+}
+
+.share input {
+vertical-align: bottom;
+}
+
+.share label {
+cursor: pointer;
+}
+
+.sharetable {
+font-size: 10px;
+margin: auto auto;
+text-align: left;
+}
+
+.sharebox {
+border: 1px solid #444;
+font-size: 10px;
+width: 300px;
+}
+
+.sharebutton {
+float: right;
+margin: 13px 20px 0;
+}
+
+.excerpt {
+color: #666;
+font-size: 12px;
+white-space: nowrap;
+}
+
+.columned {
+font-weight: bold;
+text-align: center;
+}
+
+.columned ul {
+width: 100%;
+margin: 0 auto;
+padding: 0;
+list-style: none;
+}
+
+.columned li {
+float: left;
+width: 22%;
+margin: 10px;
+padding: 0;
+}
+
+#stat-table {
+width: 100%;
+}
+
+#stat-table th {
+background:#444;
+color:#fff;
+text-align: center;
+}
+
+#stat-table td {
+max-width: 550px;
+}
+
+.highlight {
+background: #f88;
+}
+
+.hidden {
+display: none;
+}
+
+.c {
+text-align: center;
+}
+
+.r {
+text-align: right;
+}
