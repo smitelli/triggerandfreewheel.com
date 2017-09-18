@@ -13,17 +13,25 @@
       // Open up the database
       $this->db_connect(
         $config->database_host,
+        $config->database_sock,
         $config->database_user,
         $config->database_pass,
         $config->database_name
       );
     }
 
-    public function db_connect($host, $user, $pass, $db) {
+    public function db_connect($host, $sock, $user, $pass, $db) {
       $this->q_count = 0;
       $this->q_timer = 0;
 
-      $this->dbh = new PDO("mysql:host={$host};dbname={$db}", $user, $pass);
+      if ($sock) {
+        // Connecting with a Unix socket
+        $this->dbh = new PDO("mysql:unix_socket={$sock};dbname={$db}", $user, $pass);
+      } else {
+        // Connecting with TCP/IP on the default port
+        $this->dbh = new PDO("mysql:host={$host};dbname={$db}", $user, $pass);
+      }
+
       $this->dbh->exec("SET CHARACTER SET 'UTF8'");
     }
 

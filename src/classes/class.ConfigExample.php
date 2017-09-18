@@ -6,7 +6,9 @@
     public $static_uri = 'http://www.triggerandfreewheel.com/static';
 
     // Database stuff
+    // If $database_sock is a string (not FALSE), $database_host is ignored.
     public $database_host = '__FILL ME IN__';
+    public $database_sock = FALSE;
     public $database_user = '__FILL ME IN__';
     public $database_pass = '__FILL ME IN__';
     public $database_name = '__FILL ME IN__';
