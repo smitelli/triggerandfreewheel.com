@@ -1,4 +1,4 @@
-_app/cache/
-_app/uploads/
-_app/classes/class.Config.php
-extras/
+public/extras/
+src/cache/
+src/uploads/
+src/classes/class.Config.php
