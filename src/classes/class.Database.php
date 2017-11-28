@@ -26,13 +26,11 @@
 
       if ($sock) {
         // Connecting with a Unix socket
-        $this->dbh = new PDO("mysql:unix_socket={$sock};dbname={$db}", $user, $pass);
+        $this->dbh = new PDO("mysql:unix_socket={$sock};dbname={$db};charset=utf8mb4", $user, $pass);
       } else {
         // Connecting with TCP/IP on the default port
-        $this->dbh = new PDO("mysql:host={$host};dbname={$db}", $user, $pass);
+        $this->dbh = new PDO("mysql:host={$host};dbname={$db};charset=utf8mb4", $user, $pass);
       }
-
-      $this->dbh->exec("SET CHARACTER SET 'UTF8'");
     }
 
     public function db_disconnect() {
