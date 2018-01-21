@@ -1,6 +1,9 @@
 <?php
 
   class Config {
+    // This is determined by the location of bootstrap.php
+    public $base_dir = NULL;
+
     // Nothing here should *ever* have a trailing slash
     public $app_uri    = 'http://www.triggerandfreewheel.com';
     public $static_uri = 'http://www.triggerandfreewheel.com/static';
@@ -24,6 +27,12 @@
     // List of "static"-ish pages to include in the sitemap
     public $page_list = array('/', '/about', '/archive', '/comic', '/links');
 
+    // Values that begin with a slash are absolute paths and left unmodified.
+    // Values that don't begin with a slash are relative to computed $base_dir.
+    public $template_dir = 'templates';
+    public $compile_dir  = 'compile';
+    public $upload_dir   = 'uploads';
+
     // List of users who are allowed into the admin panel
     public $user_list = array(
       '__FILL IN USER NAME__' => '__FILL IN MD5 PASSWORD HASH__',
@@ -37,18 +46,21 @@
     public $access_token        = '__FILL ME IN__';
     public $access_token_secret = '__FILL ME IN__';
 
-    // These get modified later, in constructor
-    public $base_dir     = '';
-    public $compile_dir  = '/cache';
-    public $template_dir = '/templates';
-    public $upload_dir   = '/uploads';
-
     public function __construct($base_dir) {
       // Determine the app's real root during instantiation
-      $this->base_dir     = $base_dir;
-      $this->compile_dir  = $base_dir . $this->compile_dir;
-      $this->template_dir = $base_dir . $this->template_dir;
-      $this->upload_dir   = $base_dir . $this->upload_dir;
+      $this->base_dir = $base_dir;
+
+      if ($this->template_dir[0] != '/') {
+        $this->template_dir = $base_dir . '/' . $this->template_dir;
+      }
+
+      if ($this->compile_dir[0] != '/') {
+        $this->compile_dir = $base_dir . '/' . $this->compile_dir;
+      }
+
+      if ($this->upload_dir[0] != '/') {
+        $this->upload_dir   = $base_dir . '/' . $this->upload_dir;
+      }
 
       date_default_timezone_set('America/New_York');
     }
