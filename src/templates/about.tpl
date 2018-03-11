@@ -45,13 +45,10 @@
       <div class="posttitle">I am intrigued and would like to subscribe to your newsletter.</div>
       Uhh, yeah. I'll just throw you a few links.<br />
       <ul>
-        <li><a href="http://www.smitelli.com/" rel="external">Smitelli.com</a> - My personal website, more of a neglected dumping ground than anything else</li>
-        <li><a href="http://www.scottsmitelli.com/" rel="external">Scott Smitelli.com</a> - My professional website, where you can see me attempt professionalism</li>
-        <li><a href="http://vipersniper.dnsalias.com/moblog/" rel="external">Vipersniper Moblog</a> - My moblog. Just like a blog, but with mo'</li>
-        <li><a href="http://gallery.scottsmitelli.com/" rel="external">Photo Gallery</a> - Pictures of things</li>
-        <li><a href="http://twitter.com/smitelli" rel="external">@smitelli on Twitter</a> - You kids enjoy twittering and whatnot, right?</li>
-        <li><a href="http://www.facebook.com/pages/Trigger-and-Freewheel/47703583859" rel="external">Trigger and Freewheel's Facebook page</a> - Become a fan and I'll FTP you a free sandwich! (offer not valid)</li>
-        <li><a href="http://www.youtube.com/user/vipersniper32" rel="external">My YouTube channel</a> - Eh, why the hell not?</li>
+        <li><a href="https://www.scottsmitelli.com/" rel="external">Scott Smitelli.com</a> - My professional website, where you can see me attempt professionalism</li>
+        <li><a href="https://gallery.scottsmitelli.com/" rel="external">Photo Gallery</a> - Pictures of things</li>
+        <li><a href="https://twitter.com/smitelli" rel="external">@smitelli on Twitter</a> - You kids enjoy twittering and whatnot, right?</li>
+        <li><a href="https://www.youtube.com/user/vipersniper32" rel="external">My YouTube channel</a> - Eh, why the hell not?</li>
       </ul>
       <br />
       And if you <em>really</em> enjoyed the work I do, you'd click this little button:<br />

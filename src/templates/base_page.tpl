@@ -43,13 +43,13 @@
       <div id="contentbottom"></div>
 
       <div id="footer">
-        <p>Scott Smitelli was here. Licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/" rel="external">Creative Commons Attribution-Noncommercial-Share Alike 3.0 License</a>.</p>
+        <p>Scott Smitelli was here. Licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/us/" rel="external">Creative Commons Attribution-Noncommercial-Share Alike 3.0 License</a>.</p>
         <p>
-          <a href="http://validator.w3.org/check?uri=referer" rel="external"><img src="{$app->config->static_uri}/valid-html5.png" alt="Valid HTML5" /></a>
-          <a href="http://jigsaw.w3.org/css-validator/validator?uri={$app->config->static_uri|urlencode}%2Fstyle.css" rel="external"><img src="{$app->config->static_uri}/valid-css.png" alt="Valid CSS 2.1" /></a>
-          <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/" rel="license"><img src="{$app->config->static_uri}/cc-by-nc-sa.png" alt="Creative Commons License" title="Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License" /></a>
-          <a href="http://validator.w3.org/feed/check.cgi?url={$app->config->app_uri|urlencode}%2Frss" rel="external"><img src="{$app->config->static_uri}/valid-rss.png" alt="Valid RSS 2.0" /></a>
-          <a href="http://validator.w3.org/feed/check.cgi?url={$app->config->app_uri|urlencode}%2Fatom" rel="external"><img src="{$app->config->static_uri}/valid-atom.png" alt="Valid Atom 1.0" /></a>
+          <a href="https://validator.w3.org/check?uri=referer" rel="external"><img src="{$app->config->static_uri}/valid-html5.png" alt="Valid HTML5" /></a>
+          <a href="https://jigsaw.w3.org/css-validator/validator?uri={$app->config->static_uri|urlencode}%2Fstyle.css" rel="external"><img src="{$app->config->static_uri}/valid-css.png" alt="Valid CSS 2.1" /></a>
+          <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/us/" rel="license"><img src="{$app->config->static_uri}/cc-by-nc-sa.png" alt="Creative Commons License" title="Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License" /></a>
+          <a href="https://validator.w3.org/feed/check.cgi?url={$app->config->app_uri|urlencode}%2Frss" rel="external"><img src="{$app->config->static_uri}/valid-rss.png" alt="Valid RSS 2.0" /></a>
+          <a href="https://validator.w3.org/feed/check.cgi?url={$app->config->app_uri|urlencode}%2Fatom" rel="external"><img src="{$app->config->static_uri}/valid-atom.png" alt="Valid Atom 1.0" /></a>
         </p>
       </div>
     </div>

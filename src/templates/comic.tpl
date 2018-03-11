@@ -40,14 +40,6 @@
         <strong>{$comics->format_date('long')|escape:htmlall}:</strong>
         {$tpl->bb_render($comics->current->post_body)}
       </div>
-      {if $comics->is_specific()}
-        <div class="c">
-          <script type="text/javascript" src="http://www.ohnorobot.com/js/1484.js"></script>
-          <script type="text/javascript">/* <![CDATA[ */
-            transcribe('aplhs8eb.sxjE1484');
-          /* ]]> */</script>
-        </div>
-      {/if}
     </div>
     <div class="postbottom"></div>
 
@@ -87,7 +79,7 @@
         'image_url': '{$app->config->app_uri}/image/{$comics->current->permalink}'
       };
     /* ]]> */</script>
-    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=vipersniper32"></script>
+    <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=vipersniper32"></script>
   </div>
   <!-- query count={$comics->get_query_count()}, query msec={$comics->get_query_timer()} -->
 {/block}
