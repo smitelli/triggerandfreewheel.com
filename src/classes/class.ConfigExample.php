@@ -5,8 +5,8 @@
     public $base_dir = NULL;
 
     // Nothing here should *ever* have a trailing slash
-    public $app_uri    = 'http://www.triggerandfreewheel.com';
-    public $static_uri = 'http://www.triggerandfreewheel.com/static';
+    public $app_uri    = 'https://www.triggerandfreewheel.com';
+    public $static_uri = 'https://www.triggerandfreewheel.com/static';
 
     // Database stuff
     // If $database_sock is a string (not FALSE), $database_host is ignored.

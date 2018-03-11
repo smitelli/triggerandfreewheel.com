@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://www.triggerandfreewheel.com/sitemap
+Sitemap: https://www.triggerandfreewheel.com/sitemap
