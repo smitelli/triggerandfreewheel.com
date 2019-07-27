@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0"?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {foreach from=$app->config->page_list item='row'}

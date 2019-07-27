@@ -11,7 +11,7 @@
 
       $comics->load_archives('DESC', 20);
 
-      header('Content-Type: application/atom+xml; charset=UTF-8');
+      header('Content-Type: application/atom+xml');
       $template->assign('comics', $comics);
       $template->display('atom.tpl');
     }

@@ -5,11 +5,11 @@
         <table>
           <tr>
             <th style="text-align:right;">Date:</th>
-            <td><input type="text" name="post_date" value="{if isset($smarty.post.post_date)}{$smarty.post.post_date|escape:htmlall}{else}{$admin->next_date()}{/if}" style="width:500px;" /></td>
+            <td><input type="text" name="post_date" value="{if isset($smarty.post.post_date)}{$smarty.post.post_date|escape:htmlall}{else}{$admin->next_date()}{/if}" style="width:500px;"></td>
           </tr>
           <tr>
             <th style="text-align:right;">Title:</th>
-            <td><input type="text" name="post_title" value="{if isset($smarty.post.post_title)}{$smarty.post.post_title|escape:htmlall}{/if}" style="width:500px;" /></td>
+            <td><input type="text" name="post_title" value="{if isset($smarty.post.post_title)}{$smarty.post.post_title|escape:htmlall}{/if}" style="width:500px;"></td>
           </tr>
           <tr>
             <th style="text-align:right;">Body:</th>
@@ -17,18 +17,18 @@
           </tr>
           <tr>
             <th style="text-align:right;">Permalink:</th>
-            <td><input type="text" name="post_permalink" value="{if isset($smarty.post.post_permalink)}{$smarty.post.post_permalink|escape:htmlall}{/if}" style="width:500px;" /></td>
+            <td><input type="text" name="post_permalink" value="{if isset($smarty.post.post_permalink)}{$smarty.post.post_permalink|escape:htmlall}{/if}" style="width:500px;"></td>
           </tr>
           <tr>
             <th style="text-align:right;">Image:</th>
             <td>
-              <div style="float:right;"><input type="submit" name="post_submit" value="Post" /></div>
-              <input type="file" name="post_image" />
+              <div style="float:right;"><input type="submit" name="post_submit" value="Post"></div>
+              <input type="file" name="post_image">
             </td>
           </tr>
         </table>
       </form>
-      <script type="text/javascript">/* <![CDATA[ */
+      <script>
         $('input[name="post_title"]').bind('keyup', function() {
           str = $('input[name="post_title"]').val().toLowerCase();
           out = '';
@@ -46,9 +46,9 @@
           }
           $('input[name="post_permalink"]').val(out);
         });
-      /* ]]> */</script>
+      </script>
       <p>
-        There are currently {$admin->row_count()} comics in the DB.<br />
+        There are currently {$admin->row_count()} comics in the DB.<br>
         <a href="{$app->self_uri|escape:htmlall}">Reset this mess</a>.
       </p>
     </div>

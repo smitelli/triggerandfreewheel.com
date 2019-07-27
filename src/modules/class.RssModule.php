@@ -11,7 +11,7 @@
 
       $comics->load_archives('DESC', 20);
 
-      header('Content-Type: text/xml; charset=UTF-8');
+      header('Content-Type: text/xml');
       $template->assign('comics', $comics);
       $template->display('rss.tpl');
     }

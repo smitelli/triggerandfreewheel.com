@@ -20,7 +20,7 @@ $(document).ready(function() {
       switch ($(this).attr('id')) {
         case 'linktype_html':
           $('#curl').val('<a href="' + meta.comic_url + '">' + meta.title + '</a>');
-          $('#iurl').val('<img src="' + meta.image_url + '" alt="' + meta.title + '" />');
+          $('#iurl').val('<img src="' + meta.image_url + '" alt="' + meta.title + '">');
           break;
 
         case 'linktype_bbcode':

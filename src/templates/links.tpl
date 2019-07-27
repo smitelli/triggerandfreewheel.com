@@ -31,7 +31,7 @@
           <li><a href="http://xkcd.com/" rel="external">xkcd</a></li>
         </ul>
       </div>
-      <br style="clear:both;" />
+      <br style="clear:both;">
     </div>
     <div class="postbottom"></div>
   </div>

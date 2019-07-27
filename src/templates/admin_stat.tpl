@@ -11,7 +11,7 @@
         The <span class="highlight">highlighted</span> cells indicate a
         &gt;50% increase from the previous day's value.
       </p>
-      <style type="text/css">
+      <style>
         #stat-table td { word-wrap: break-word; }
       </style>
       <table id="stat-table">
@@ -32,7 +32,7 @@
             <td class="c"><a href="{$app->config->app_uri}/comic/{$row->date}">{$row->date}</a></td>
             <td>
               <a href="{$app->config->app_uri}/comic/{$row->permalink}"><strong>{$row->post_title|escape:htmlall}</strong></a>
-              <br />{$row->post_body|escape:htmlall}
+              <br>{$row->post_body|escape:htmlall}
             </td>
             <td class="r{if $row->viewcount_page > $last_viewcount_page * 1.5} highlight{/if}">{$row->viewcount_page|number_format}</td>
             <td class="r{if $row->viewcount_premiere > $last_viewcount_premiere * 1.5} highlight{/if}">{$row->viewcount_premiere|number_format}</td>

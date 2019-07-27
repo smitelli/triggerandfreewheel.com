@@ -19,7 +19,7 @@
         {$comics->format_date('short', $row)|escape:htmlall}&nbsp;&mdash;&nbsp;
         <a href="{$app->config->app_uri}/comic/{$row->permalink}">{$row->post_title|escape:htmlall}</a>
         <span class="excerpt"> &mdash; {$tpl->excerpt_render($row->post_body, 100)}</span>
-        <br />
+        <br>
       {/strip}
       {if $smarty.foreach.rowloop.last}
         </div><div class="postbottom"></div>

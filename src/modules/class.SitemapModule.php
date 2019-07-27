@@ -11,7 +11,7 @@
 
       $comics->load_archives();
 
-      header('Content-Type: text/xml; charset=UTF-8');
+      header('Content-Type: text/xml');
       $template->assign('comics',   $comics);
       $template->assign('rightnow', date('c'));
       $template->display('sitemap.tpl');
