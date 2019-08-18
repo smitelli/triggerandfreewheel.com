@@ -1,13 +1,9 @@
-var addthis_config = { 'data_track_clickback': true };
-
 $(document).ready(function() {
   $('a[rel=external], a[rel=license]').attr('target', '_blank');
 
   $('.sharebox').click(function() { $(this).select(); });
 
   if (typeof meta != 'undefined') {
-    $('.sharebutton').attr('addthis:title', meta.title).attr('addthis:url', meta.comic_url);
-
     $('input[name=linktype]').click(function() {
       switch ($(this).attr('id')) {
         case 'linktype_html':

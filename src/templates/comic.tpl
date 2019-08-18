@@ -10,9 +10,6 @@
     <div class="posttop"></div>
     <div class="post">
       <div class="posttitle">
-        <div class="addthis_toolbox addthis_default_style sharebutton">
-          <a class="addthis_counter addthis_pill_style"></a>
-        </div>
         <a href="{$app->config->app_uri}/comic/{$comics->current->permalink}">{$comics->current->post_title|escape:htmlall}</a>
       </div>
       {strip}
@@ -79,7 +76,6 @@
         'image_url': '{$app->config->app_uri}/image/{$comics->current->permalink}'
       };
     </script>
-    <script src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=vipersniper32"></script>
   </div>
   <!-- query count={$comics->get_query_count()}, query msec={$comics->get_query_timer()} -->
 {/block}
