@@ -16,11 +16,12 @@
         $config->database_sock,
         $config->database_user,
         $config->database_pass,
-        $config->database_name
+        $config->database_name,
+        $config->timezone
       );
     }
 
-    public function db_connect($host, $sock, $user, $pass, $db) {
+    public function db_connect($host, $sock, $user, $pass, $db, $timezone) {
       $this->q_count = 0;
       $this->q_timer = 0;
 
@@ -31,6 +32,8 @@
         // Connecting with TCP/IP on the default port
         $this->dbh = new PDO("mysql:host={$host};dbname={$db};charset=utf8mb4", $user, $pass);
       }
+
+      $this->dbh->exec("SET time_zone = '{$timezone}'");
     }
 
     public function db_disconnect() {
