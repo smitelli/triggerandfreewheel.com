@@ -18,7 +18,7 @@
       <div class="posttitle">Who draws this comic?</div>
       Well, I suppose I'll have to take the blame for that one.<br>
       <br>
-      Oh, you want like a bio or something? Well, if you insist. I'm Scott Smitelli, a {$age|escape:htmlall} year old web guy/sound guy residing in or around the greater New York City area. I studied Computer Science at the Rochester Institute of Technology, which lasted all of two years. I transferred to the New York Film Academy, eventually doing freelance sound work on film and video projects. When the economy tanked in 2009, I jumped back to web development. In my spare time, I enjoy computers, music, dumpster diving, getting lost, the smell of rosin-core solder, meandering through Wikipedia, and making lists of things. Sentence fragments. Probably other stuff too.<br>
+      Oh, you want like a bio or something? Well, if you insist. I'm Scott Smitelli, a {$age|escape:htmlall} year old web guy/sound guy residing in or around the Raleigh-Durham, North Carolina area. I studied Computer Science at the Rochester Institute of Technology, which lasted all of two years. I transferred to the New York Film Academy, eventually doing freelance sound work on film and video projects. When the economy tanked in 2009, I jumped back to web development. In my spare time, I enjoy computers, music, dumpster diving, getting lost, the smell of rosin-core solder, meandering through Wikipedia, and making lists of things. Sentence fragments. Probably other stuff too.<br>
       <br>
       I'm easy to get in contact with. Just shoot an email to <code>scott[at]triggerandfreewheel[dot com]</code> (after reassembling that email address, of course) and who knows, I might even write something back!
     </div>
