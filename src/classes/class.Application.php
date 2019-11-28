@@ -17,8 +17,8 @@
       $this->config = new Config($base_dir);
 
       // Strip the parent directories out of the request URI, if it has them
-      $base = parse_url($this->config->app_uri, PHP_URL_PATH);
-      $request = parse_url($request_uri, PHP_URL_PATH);
+      $base = parse_url($this->config->app_uri, PHP_URL_PATH) ?: '';
+      $request = parse_url($request_uri, PHP_URL_PATH) ?: '';
       if (stripos($request, $base) === 0) {
         $request = substr($request, strlen($base));
       }
