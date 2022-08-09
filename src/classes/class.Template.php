@@ -48,10 +48,10 @@
       $this->assign('tpl', $this);
     }
 
-    public function display($t, $ca_id = null, $co_id = null, $p = null) {
+    public function display($template = NULL, $cache_id = NULL, $compile_id = NULL, $parent = NULL) {
       header('X-Mitch-Hedberg: My fake plants died because I did not pretend ' .
              'to water them.');
-      parent::display($t, $ca_id, $co_id, $p);
+      parent::display($template, $cache_id, $compile_id, $parent);
     }
 
     public function send_404() {
