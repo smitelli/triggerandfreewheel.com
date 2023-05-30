@@ -13,18 +13,21 @@
         die();
       }
 
+      $config = Application::singleton()->config;
       $comics = new Comics();
 
       // See if any comic needs to be tweeted
-      $comics->load_untweeted();
-      if ($comics->has_current()) {
-        // There is a comic that should be sent to Twitter
-        $base    = Application::singleton()->config->app_uri . '/comic';
-        $message = "[comic] {$base}/{$comics->current->permalink} - " .
-                   $comics->current->post_title;
-        $twitter = new TwitterWrapper();
-        $result = $twitter->reliable_tweet($message);
-        if ($result !== FALSE) $comics->mark_tweeted();
+      if ($config->enable_twitter) {
+        $comics->load_untweeted();
+        if ($comics->has_current()) {
+          // There is a comic that should be sent to Twitter
+          $base    = $config->app_uri . '/comic';
+          $message = "[comic] {$base}/{$comics->current->permalink} - " .
+                     $comics->current->post_title;
+          $twitter = new TwitterWrapper();
+          $result = $twitter->reliable_tweet($message);
+          if ($result !== FALSE) $comics->mark_tweeted();
+        }
       }
 
       // See if we need to update the daily summary table

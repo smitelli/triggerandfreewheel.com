@@ -45,6 +45,9 @@
       '__FILL IN USER NAME__' => '__FILL IN MD5 PASSWORD HASH__'
     );
 
+    // Enable all Twitter posting functionality globally
+    public $enable_twitter = FALSE;
+
     // Read/write credentials for a Twitter account
     public $consumer_key        = '__FILL ME IN__';
     public $consumer_secret     = '__FILL ME IN__';
